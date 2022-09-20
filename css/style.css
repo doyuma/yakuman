@@ -151,21 +151,24 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ボックス１個あたりの設定*/
 #main .list {
-  width: 16%; /*幅*/
-  float: left; /*左に回り込み*/
   text-align: center; /*ボックス内をセンタリング*/
   margin-left: 3%; /*ボックスの外（左）にあけるスペース*/
   margin-bottom: 20px; /*ボックスの外（下）にあけるスペース*/
 }
 /*ボックス内の画像*/
-#main .list figure img {
-  border-radius: 200px; /*角丸のサイズ。適当に大きめに設定しておけばOK。*/
+#main .list figure img,
+.list iframe {
+  border-radius: 20px; /*角丸のサイズ。適当に大きめに設定しておけばOK。*/
 }
 /*ボックス内のh3タグ*/
 #main .list h3 {
   font-weight: normal; /*hタグのデフォルトの太字を標準に*/
   font-size: 11px; /*文字サイズ*/
   padding: 0px 10px; /*上下・左右への余白*/
+}
+/*動画のレスポンシブ対応*/
+iframe {
+  width: 100%;
 }
 
 /*サブコンテンツ
